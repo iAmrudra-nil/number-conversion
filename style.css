@@ -158,7 +158,8 @@ footer p{
         padding: 0px;
 
     }
-    #container,#tab{
+    #container,#tab,#exp
+    {
         width:70vw;
     }
     #info p{
