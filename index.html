@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NumConvert- Converts your number from one number system to another</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div id="logo">
+                <h1>NumConvert</h1>
+            </div>
+            <ul>
+                <li class="item"><a href="index.html" >Home</a></li>
+                <li class="item"><a href="numsys.html">About conversion</a></li>
+                <li class="item"><a href="info.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div id="container">
+                <div class="containers">
+                <div>
+                <label for="ty-1">From</label>
+                <select name="from" id="ty-1">
+                    <option value="dec">Decimal</option>
+                    <option value="bin">Binary</option>
+                    <option value="oc">Octal</option>
+                    <option value="hex">Hexa Decimal</option>
+                </select>
+                </div>
+                <div >
+                <label for="ty-2">To</label>
+                <select name="to" id="ty-2">
+                    <option value="dec">Decimal</option>
+                    <option value="bin">Binary</option>
+                    <option value="oc">Octal</option>
+                    <option value="hex">Hexa Decimal</option>
+                </select>
+                </div>
+                </div>
+                <div class="containers-1">
+                <label for="ip-1">
+                    Input
+                    <br>
+                    <input type="numeric" id="ip-1">
+                </label>
+                </div>
+                <div class="containers-1">
+                <label for="op-1">
+                    Output
+                    <br>
+                    <input type="text" id="op-1">
+                </label>
+                </div>
+                <div id="submit">
+                    <button onclick="main()" class="btn">convert</button>
+                    <button type="reset" onclick="reset()"class="btn">Reset</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="tab">
+                <p>Decimal to Binary number conversion:-</p>
+                <p>conver 12(10)to Binary:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Division by 2</th>
+                            <th>Ouotient</th>
+                            <th>Reminder</th>
+                            <th>Bit#</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>12/2</td>
+                            <td>6</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>6/2</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>3/2</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>1/2</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>3</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                    <table>
+                        <p>Number Table:</p>
+                        <thead>
+                            <tr>
+                                <th>Decimal</th>
+                                <th>Binary</th>
+                                <th>Octal</th>
+                                <th>Hexa Decimal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>0</td>
+                                <td>0000</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>0001</td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>0010</td>
+                                <td>2</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>0011</td>
+                                <td>3</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>0100</td>
+                                <td>4</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>0101</td>
+                                <td>5</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>0110</td>
+                                <td>6</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>0111</td>
+                                <td>7</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>1000</td>
+                                <td>10</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>1001</td>
+                                <td>11</td>
+                                <td>9</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>1010</td>
+                                <td>12</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>1011</td>
+                                <td>13</td>
+                                <td>B</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>1100</td>
+                                <td>14</td>
+                                <td>C</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>1101</td>
+                                <td>15</td>
+                                <td>D</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>1110</td>
+                                <td>16</td>
+                                <td>E</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>1111</td>
+                                <td>17</td>
+                                <td>E</td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div id="exp">
+        <textarea name="" id="" cols="20" rows="10"placeholder="Submit your Experience"></textarea>
+        <button class="btn" onclick="alert('Thank You!')">Submit</button>
+        </div>
+        <p>copyright &copy; Rudranil Samanta</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
